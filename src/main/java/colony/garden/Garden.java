@@ -1,7 +1,6 @@
 package colony.garden;
 
 import colony.organisms.Plant;
-
 import java.util.*;
 
 // this code is modified from the in class polymorphia maze
@@ -114,6 +113,14 @@ public class Garden {
 
         public Builder create3x3Grid() {
             return createGridOfPlots(3, 3, grid3x3PlotNames);
+        }
+
+        public Garden build() {
+            return garden;
+        }
+
+        public static Builder newBuilder() {
+            return new Builder(new PlotFactory());
         }
     }
 }

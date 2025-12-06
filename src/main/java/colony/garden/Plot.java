@@ -36,7 +36,7 @@ public class Plot {
                 .toList();
     }
 
-    void plantSeed(Plant plant) {
+    public void plantSeed(Plant plant) {
         if (plant != null){
             uprootPlant(this.plant);
         }

@@ -6,5 +6,8 @@ import colony.organisms.Plant;
 public class PlantStrategy {
     public double photosynthesize(Plant plant, Plot currentPlot){
         return plant.getOxygenOutput();
-    };
+    }
+
+    public void playDay(Plant plant, Plot currentPlot) {
+    }
 }

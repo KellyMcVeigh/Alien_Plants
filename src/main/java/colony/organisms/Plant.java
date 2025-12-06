@@ -56,6 +56,10 @@ public class Plant{
         return strategy.photosynthesize(this, getCurrentLocation());
     }
 
+    public void playDay() {
+        strategy.playDay(this, getCurrentLocation());
+    }
+
     public Double getOxygenOutput() {
         return oxygenOutput;
     }
